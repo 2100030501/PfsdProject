@@ -1,0 +1,55 @@
+{% extends 'navbar0.html' %}
+#for images
+{% load static %}
+<html>
+{% block body %}
+
+<div class="container" align="center">
+</div>
+<br>
+<!--<center>-->
+<!--<div class="btn-group">-->
+<!-- <a href="link5"> <button type="button" class="btn btn-primary">Browse menu</button></a>-->
+<!--</div>-->
+<!--      </center>-->
+
+
+<div class="row">
+  <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="{% static 'images/i1.jpg' %}" alt="Card image cap" height="310" >
+          <div class="card-body">
+              <h5 class="card-title">BURGER</h5>
+              <p class="card-text"> Fresh natural ingredients in variety of flavors.</p>
+              <center><a href="burg" class="btn btn-primary">BROWSE MENU</a></center>
+          </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/f2.jpg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">PIZZA</h5>
+            <p class="card-text">SnackPack Tastiest Pan Pizzas at amazing prices.</p>
+            <center><a href="piza" class="btn btn-primary">BROWSE MENU</a></center>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/f3.jpeg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">BIRIYANI</h5>
+            <p class="card-text">Special deccan herbs and spices.</p>
+            <center><a href="link7" class="btn btn-primary">BROWSE MENU</a></center>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+</html>
+
+<!--            <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--            <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!-

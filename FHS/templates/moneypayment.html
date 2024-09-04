@@ -1,0 +1,63 @@
+{% extends 'navbar0.html' %}
+#for images
+{% load static %}
+{% block body %}
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Template</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="mb-0">Payment Details</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" class="form-control" id="card-number">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="expiry-date">Expiry Date</label>
+                  <input type="text" class="form-control" id="expiry-date">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="cvv">CVV</label>
+                  <input type="text" class="form-control" id="cvv">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name-on-card">Name on Card</label>
+                <input type="text" class="form-control" id="name-on-card">
+              </div>
+              <div class="form-group">
+                <label for="billing-address">Billing Address</label>
+                <textarea class="form-control" id="billing-address" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-wMLv5J5q5+5/5KfcH4x4v9XqrNiqgB0NGrzEd8yJPDl1/JhYICLcYQzJfhiF9Xys" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% endblock %}

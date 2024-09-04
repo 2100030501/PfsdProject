@@ -1,0 +1,70 @@
+{% extends 'navbar0.html' %}
+#for images
+{% load static %}
+<!--<img class="card-img-top" src="{% static 'images/i1.jpg' %}" height="700" >-->
+<html>
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <br>
+    <div class="row">
+  <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="{% static 'images/chibir.jpg' %}" alt="Card image cap" height="310" >
+          <div class="card-body">
+              <h5 class="card-title">Chicken Biryani</h5>
+             <p class="card-text"><small class="text-muted">Rs. 230</small></p>
+              <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+          </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/fishbir.jpg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">Boneless Fish Biryani</h5>
+            <p class="card-text"><small class="text-muted">Rs. 350</small></p>
+            <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/eggbir.jpg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">Egg Biryani</h5>
+            <p class="card-text"><small class="text-muted">Rs. 390</small></p>
+
+           <input id=demoInput type=number min=0 max=5>
+<button onclick="increment()">+</button>
+<button onclick="decrement()">-</button>
+<script>
+   function increment() {
+      document.getElementById('demoInput').stepUp();
+   }
+   function decrement() {
+      document.getElementById('demoInput').stepDown();
+   }
+</script>
+
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

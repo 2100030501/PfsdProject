@@ -1,0 +1,54 @@
+{% extends 'navbar0.html' %}
+#for images
+{% load static %}
+<!--<img class="card-img-top" src="{% static 'images/i1.jpg' %}" height="700" >-->
+<html>
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <br>
+    <div class="row">
+  <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="{% static 'images/cheesebur.jpg' %}" alt="Card image cap" height="310" >
+          <div class="card-body">
+              <h5 class="card-title">CHEESE BURGER</h5>
+             <p class="card-text"><small class="text-muted">Rs.180</small></p>
+              <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+          </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/chibur.jpg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">CHICKEN BURGER</h5>
+            <p class="card-text"><small class="text-muted">Rs. 190</small></p>
+            <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/vegburger.jpg' %}" alt="Card image cap" height="310" >
+        <div class="card-body">
+            <h5 class="card-title">VEG BURGER</h5>
+            <p class="card-text"><small class="text-muted">Rs. 70</small></p>
+
+           <center><button type="button" class="btn btn-primary">Add to Cart</button></center>
+
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}
